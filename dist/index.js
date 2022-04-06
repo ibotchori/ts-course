@@ -79,3 +79,12 @@ const mike = new Person(18, "Mike");
 console.log(brad, mike);
 console.log(brad.register());
 // console.log(brad.id); // can't access
+// Extending Classes (Subclasses)
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, "Janet", "Developer");
+console.log(emp.register());
