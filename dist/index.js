@@ -69,7 +69,12 @@ class Person {
     constructor(id, name) {
         (this.id = id), (this.name = name);
     }
+    register() {
+        return `${this.name} is now registered`;
+    }
 }
 const brad = new Person(32, "Brad");
 const mike = new Person(18, "Mike");
 console.log(brad, mike);
+console.log(brad.register());
+// console.log(brad.id); // can't access

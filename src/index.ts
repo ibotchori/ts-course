@@ -107,11 +107,15 @@ const sub: MathFunc = (x: number, y: number): number => x - y;
 
 // Classes
 class Person {
+  // private id: number; // access this property only this class
+  // protected name: string; // access this property only this class, or extended class
   id: number;
   name: string;
-
   constructor(id: number, name: string) {
     (this.id = id), (this.name = name);
+  }
+  register() {
+    return `${this.name} is now registered`;
   }
 }
 
@@ -119,3 +123,7 @@ const brad = new Person(32, "Brad");
 const mike = new Person(18, "Mike");
 
 console.log(brad, mike);
+
+console.log(brad.register());
+
+// console.log(brad.id); // can't access
