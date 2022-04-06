@@ -48,6 +48,7 @@ enum Direction2 {
 console.log(Direction2.Left); // = 10
 
 // Objects
+// type can be used with primitives and unions
 type User = {
   id: number;
   name: string;
@@ -77,3 +78,22 @@ function log(message: string | number): void {
 }
 
 log(1);
+
+// Interfaces
+interface UserInterface {
+  readonly id: number;
+  name: string;
+  age?: number; // age property is not necessary
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: "John",
+};
+
+// user1.id = 3; ! <-- read only property
+
+// you can't use interface with primitives
+
+// interface Point = number | string;
+// const p1: Point = 1;

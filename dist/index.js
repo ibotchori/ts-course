@@ -58,3 +58,11 @@ function log(message) {
     console.log(message);
 }
 log(1);
+const user1 = {
+    id: 1,
+    name: "John",
+};
+// user1.id = 3; ! <-- read only property
+// you can't use interface with primitives
+// interface Point = number | string;
+// const p1: Point = 1;
