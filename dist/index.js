@@ -1,3 +1,9 @@
 "use strict";
+// Basic types
 let id = 5;
-console.log("ID:", id);
+let company = "String";
+let isPublished = true;
+let x = "Hello";
+x = 3;
+let age;
+age = 4;
