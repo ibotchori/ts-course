@@ -19,3 +19,23 @@ employ = [
     [1, "John"],
     [3, "Mike"],
 ];
+// Union
+let pid;
+pid = 3;
+// Enum
+var Direction1;
+(function (Direction1) {
+    Direction1[Direction1["Up"] = 8] = "Up";
+    Direction1[Direction1["Down"] = 9] = "Down";
+    Direction1[Direction1["Left"] = 10] = "Left";
+    Direction1[Direction1["Right"] = 11] = "Right";
+})(Direction1 || (Direction1 = {}));
+console.log(Direction1.Left); // = 10
+var Direction2;
+(function (Direction2) {
+    Direction2["Up"] = "Up";
+    Direction2["Down"] = "Down";
+    Direction2["Left"] = "Left";
+    Direction2["Right"] = "Right";
+})(Direction2 || (Direction2 = {}));
+console.log(Direction2.Left); // = 10

@@ -23,3 +23,26 @@ employ = [
   [1, "John"],
   [3, "Mike"],
 ];
+
+// Union
+let pid: string | number;
+pid = 3;
+
+// Enum
+enum Direction1 {
+  Up = 8,
+  Down,
+  Left,
+  Right,
+}
+
+console.log(Direction1.Left); // = 10
+
+enum Direction2 {
+  Up = "Up",
+  Down = "Down",
+  Left = "Left",
+  Right = "Right",
+}
+
+console.log(Direction2.Left); // = 10
