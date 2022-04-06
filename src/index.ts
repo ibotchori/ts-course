@@ -105,8 +105,14 @@ interface MathFunc {
 const add: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
 
+interface PersonInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
 // Classes
-class Person {
+class Person implements PersonInterface {
   // private id: number; // access this property only this class
   // protected name: string; // access this property only this class, or extended class
   id: number;
@@ -115,6 +121,7 @@ class Person {
     (this.id = id), (this.name = name);
   }
   register() {
+    // return 1 // register must be a string
     return `${this.name} is now registered`;
   }
 }

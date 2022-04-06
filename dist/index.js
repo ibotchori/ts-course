@@ -70,6 +70,7 @@ class Person {
         (this.id = id), (this.name = name);
     }
     register() {
+        // return 1 // register must be a string
         return `${this.name} is now registered`;
     }
 }
