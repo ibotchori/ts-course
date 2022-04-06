@@ -63,3 +63,17 @@ let cid: any = 1;
 // let customerId = <number>cid;
 let customerId = cid as number;
 customerId = 2;
+
+// Functions
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+
+console.log(addNum(1, 3));
+
+// void function, returns any type
+function log(message: string | number): void {
+  console.log(message);
+}
+
+log(1);
