@@ -148,3 +148,14 @@ class Employee extends Person {
 const emp = new Employee(3, "Janet", "Developer");
 
 console.log(emp.register());
+
+// Generics (Reusable components)
+function getArray<T>(items: T[]): T[] {
+  // <T> is a placeholder for type
+  return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1, 2, 3, 4, 5]); // define type here, instead <T>
+let strArray = getArray<string>(["Brad", "John", "Jill"]); // define type here, instead <T>
+
+strArray.push("");
