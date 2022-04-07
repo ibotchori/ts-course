@@ -159,3 +159,5 @@ let numArray = getArray<number>([1, 2, 3, 4, 5]); // define type here, instead <
 let strArray = getArray<string>(["Brad", "John", "Jill"]); // define type here, instead <T>
 
 strArray.push("");
+
+// Test

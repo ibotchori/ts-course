@@ -96,3 +96,4 @@ function getArray(items) {
 let numArray = getArray([1, 2, 3, 4, 5]); // define type here, instead <T>
 let strArray = getArray(["Brad", "John", "Jill"]); // define type here, instead <T>
 strArray.push("");
+// Test
